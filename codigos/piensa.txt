@@ -1,0 +1,12 @@
+hola mundo
+archivo txt para ser usado en los ejemplos
+piensa libre
+ejemplos en python
+hola a todos
+sean felices
+estan a un paso de lograr sus metas
+todo camino empieza con un solo paso
+se hace camino al andar
+Agregamos una nueva linea a nuestro archivo desde codigo en python
+Agregamos una nueva linea a nuestro archivo desde codigo en python
+Agregamos una nueva linea a nuestro archivo desde codigo en python
