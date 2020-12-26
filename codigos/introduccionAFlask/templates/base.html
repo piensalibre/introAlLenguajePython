@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{%block title%}{%endblock%}</title><!--dentro de las llaves y encerrada dentro de signos de porcentaje se usan las etiquetas block que precede al nombre del bloque que se incrustara, despues de cierra el bloque con endblock-->
+        <link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}"><!--se manda como parametro a url_for el parametro static que es el nombre de la carpeta y style,css que es el nombre del archivo-->
+    </head>
+    <body>
+        <nav>
+            <h1>Titulo</h1>
+        </nav>
+        <section class="content">
+                {%block content%}{%endblock%}
+        </section>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+<h1>Usuarios</h1>
+<ul>
+    {% for usuario in usuarios %}<!--el ciclo for tambien se encierra entre llaves y signos de porcentaje-->
+    <li>
+        {{usuario["username"]}}
+    </li>
+    {% endfor %}
+</ul>
