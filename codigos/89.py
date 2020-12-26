@@ -1,0 +1,12 @@
+#codigo 89, ejemplo de algunas funciones que reciben como parametros listas
+lista = list()
+lista.append(5)
+lista.append(4)
+lista.append(3)
+lista.append(2)
+print(lista)
+print(len(lista))
+print(max(lista))
+print(min(lista))
+print(sum(lista))
+print(sum(lista)/len(lista))

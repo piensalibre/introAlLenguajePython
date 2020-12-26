@@ -1,0 +1,11 @@
+#codigo 86, ejemplo de agregar elementos a las listas mediante el metodo append
+lista = list()
+print(lista)
+lista.append("Piensa")
+print(lista)
+lista.append("libre")
+print(lista)
+lista.append("Hola")
+print(lista)
+lista.append("mundo")
+print(lista)

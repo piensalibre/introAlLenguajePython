@@ -1,0 +1,9 @@
+hola
+soy
+un
+archivo de 
+prueba,
+sere consultado por
+un script en 
+python para ser leido como un
+conjunto de lineas
