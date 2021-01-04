@@ -1,0 +1,15 @@
+{%extends "base2.html"%}
+{%block contenido%}
+    <h1>Hola {{dic["nombre"]}}</h1>
+    <h2>Bienvenidos</h2>
+    {% if dic["num"] == 1 %}
+    <h2>Es uno</h2>
+    {%elif dic["num"] == 0%}
+    <h2>Es 0</h2>
+    {% else %}
+    <h2>Es un numero distinto a uno o 0</h2>
+    {%endif%}
+    {%for n in dic["lista"]%}
+    <h2>{{n}}</h2>
+    {%endfor%}
+{%endblock%}

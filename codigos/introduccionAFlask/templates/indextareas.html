@@ -1,0 +1,10 @@
+{%extends "basetareas.html"%}
+{%block content%}
+    <h1>{% block title%}Lista de tareas{%endblock%}</h1>
+    <ul>
+        {%for tarea in tareas%}
+            <li>{{tarea}}</li>
+        {%endfor%}
+    </ul>
+    <a href="{{url_for('agregar')}}">Agregar tarea</a>
+{%endblock%}

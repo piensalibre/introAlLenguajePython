@@ -1,0 +1,9 @@
+{%extends "basetareas.html"%}
+{%block content%}
+<h1>{%block title%}Agregar tarea{%endblock%}</h1>
+<form action="{{url_for('agregar')}}" method="POST">
+    <label for="tarea">Agregar tarea</label>
+    <input type="text" name="tarea" placeholder="Agrega nueva tarea">
+    <button>Agregar</button>
+</form>
+{%endblock%}
