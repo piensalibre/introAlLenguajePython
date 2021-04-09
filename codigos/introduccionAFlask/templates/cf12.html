@@ -1,0 +1,14 @@
+{%extends 'cfbase2.html'%}
+{%block content%}
+<div class="container">
+    {%if commentList %}
+        {%for comment in commentList.items%}
+            <h2>{{comment.username}}</h2>
+            <h3>{{comment.text}}</h3>
+            <p>{{date_format(comment.created_date)}}</p>
+            <br>
+            <hr>
+        {%endfor%}
+    {%endif%}
+</div>
+{%endblock%}

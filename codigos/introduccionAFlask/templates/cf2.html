@@ -1,0 +1,16 @@
+{%extends 'cfbase.html'%}
+{%block content%}
+<p>{{nombre}}</p>
+<p>{{edad}}</p>
+{%for item in list%}
+<p>{{item}}</p>
+{%endfor%}
+{%from "_macro.html" import showListH, renderField%}
+{{showListH(title)}}
+{%from "_macro.html" import renderField%}
+<form name="enviarmensaje" id="formulario de contacto" method="POST">{{renderField(Form.username)}}
+    {{renderField(Form.email)}}
+    {{renderField(Form.comment,class="azul")}}
+    <button type="submit">Enviar</button>
+</form>
+{%endblock%}

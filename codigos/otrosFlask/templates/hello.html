@@ -1,0 +1,33 @@
+{%extends "base.html"%}
+{%import "macros.html" as macros%}
+{%block title%}
+{{super()}}
+Hello
+{%endblock%}
+
+{%block content%}
+{%if username %}
+    <h1>Bienvenido {{username | capitalize}}</h1>
+{%endif%}
+{%if userIp%}
+<h3>Hello world, tu ip es {{userIp}}</h3>
+{%else%}
+<a href="{{url_for('index')}}">Ir a inicio</a>
+{%endif%}
+<div>
+    <form action="{{url_for('hello')}}" method="POST">
+        {{loginForm.username.label}}
+        {{loginForm.username}}
+        <br>
+        {{loginForm.password.label}}
+        {{loginForm.password}}
+        <br>
+        {{loginForm.submit}}
+    </form>
+</div>
+<ol>
+    {%for todo in todos%}
+        {{macros.render_todo(todo)}}
+    {%endfor%}
+</ol>
+{%endblock%}

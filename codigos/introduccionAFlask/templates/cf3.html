@@ -1,0 +1,10 @@
+{%extends 'cfbase.html'%}
+{%block content%}
+{%from "_macro2.html" import renderField%}
+<form name="enviarmensaje" id="formulario de contacto" method="POST">{{renderField(Form.username)}}
+    {{renderField(Form.email)}}
+    {{renderField(Form.comment,class="azul")}}
+    {{Form.senuelo}}
+    <button type="submit">Enviar</button>
+</form>
+{%endblock%}

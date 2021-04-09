@@ -1,0 +1,12 @@
+{%macro showListH(value)%}
+<h1>{{value}}</h1>
+<h2>{{value}}</h2>
+<h3>{{value}}</h3>
+<h4>{{value}}</h4>
+<h5>{{value}}</h5>
+{%endmacro%}
+
+{%macro renderField(field)%}
+<dt>{{field.label}}<dt>
+<dd>{{field(**kwargs)|safe}}</dd>
+{%endmacro%}

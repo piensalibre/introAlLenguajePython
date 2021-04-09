@@ -1,0 +1,10 @@
+{%extends 'cfbase.html'%}
+{%block content%}
+{%from "_macro2.html" import renderField%}
+<form id="loginForm" method="POST">
+    <input type="hidden" name="csrf_token" value="{{csrf_token()}}">
+    {{renderField(Form.username)}}
+    {{renderField(Form.password)}}
+    <button type="submit">Enviar</button>
+</form>
+{%endblock%}

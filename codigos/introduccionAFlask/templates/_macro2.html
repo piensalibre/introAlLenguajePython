@@ -1,0 +1,12 @@
+{%macro renderField(field)%}
+<dt>{{field.label}}<dt>
+<dd>{{field(**kwargs)|safe}}</dd>
+
+{%if field.errors%}
+<ul>
+    {%for error in field.errors%}
+    <li>{{error}}</li>
+    {%endfor%}
+</ul>
+{%endif%}
+{%endmacro%}
